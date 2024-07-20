@@ -130,7 +130,7 @@ resource "aws_instance" "public_instance" {
   vpc_security_group_ids = [aws_security_group.public-sg.id]
 
   tags = {
-    Name = "public-instance"
+    Name = "public-instance1"
   }
 }
 
@@ -142,6 +142,6 @@ resource "aws_instance" "private_instance" {
   vpc_security_group_ids = [aws_security_group.private-sg.id]
 
   tags = {
-    Name = "private-instance"
+    Name = "private-instance1"
   }
 }
